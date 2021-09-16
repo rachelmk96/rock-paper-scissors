@@ -8,3 +8,13 @@ user_choice = input("Please choose either 'rock', 'paper', or 'scissors': ")
 
 print("You chose: ")
 print(user_choice)
+
+#comupter computing
+import random
+options = ["rock", "paper", "scissors"]
+
+computer_choice = random.choice(options)
+
+#computer output
+print("Computer chose: ")
+print(computer_choice)
