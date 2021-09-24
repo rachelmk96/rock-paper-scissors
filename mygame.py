@@ -12,7 +12,7 @@ options = ["rock", "paper", "scissors"]
 computer_choice = random.choice(options)
 
 #invalid user input prompt
-# User option validation adapted shared by Gianna Valencia from Slack
+#User option validation adapted shared by Gianna Valencia from Slack
 if user_choice not in options:
     print("Not a valid option friend. Please use lower case. Exiting...")
     exit()
@@ -28,7 +28,18 @@ print(computer_choice)
 #determining winner
 if user_choice == computer_choice:
   print("It's a tie!")
-#debugging
-breakpoint()
 
-print("Thanks for playing friend. Please play again!")
+elif computer_choice == "rock" and user_choice == "paper":
+    print("You won!\n")
+
+elif computer_choice == "scissors" and user_choice == "rock":
+    print("You won!\n")
+
+elif computer_choice == "paper" and user_choice == "scissors":
+    print("You won!\n")
+
+else:
+    print("You lost. Sorry!")
+
+#End prompt
+print("Thanks for playing friend. Please play again!\n")
