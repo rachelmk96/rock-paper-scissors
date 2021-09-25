@@ -1,5 +1,14 @@
+#user name customization
+#code for dotenv import, load, and call adapted by Mike Rossetti's code from GitHub see: https://github.com/prof-rossetti/my-first-python-app/blob/main/app/my_script.py
+import os
+from dotenv import load_dotenv # see: https://github.com/theskumar/python-dotenv
+
+load_dotenv()
+
+USER_NAME = os.getenv("USER_NAME", default="Player One")
+
 #game start prompt
-print("-------------------\n Welcome 'Player One' to my Rock-Paper-Scissors game...")
+print("-------------------\n Welcome", USER_NAME, "to my Rock-Paper-Scissors game...")
 print("-------------------")
 
 #user input
@@ -12,9 +21,9 @@ options = ["rock", "paper", "scissors"]
 computer_choice = random.choice(options)
 
 #invalid user input prompt
-#User option validation adapted shared by Gianna Valencia from Slack
+#User option validation adapted by Gianna Valencia's code from Slack
 if user_choice not in options:
-    print("Not a valid option friend. Please use lower case. Exiting...")
+    print("Not a valid option", USER_NAME,". Please use lower case. Exiting...")
     exit()
 
 #user output
@@ -42,4 +51,4 @@ else:
     print("You lost. Sorry!")
 
 #End prompt
-print("Thanks for playing friend. Please play again!\n")
+print("Thanks for playing", USER_NAME,". Please play again!\n")

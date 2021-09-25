@@ -1,0 +1,5 @@
+# this is the requirements.txt file
+
+#For customizing player name pip install packages:
+
+python-dotenv # see: https://github.com/theskumar/python-dotenv
