@@ -20,7 +20,7 @@ After creating and activating the virtual environment, install packages with Pip
   pip install -r required.txt
 ```
 
-+Customization
++Customization (Optional)
 Create a .env file within the rock-paper-scissors folder location and enter your user name:
 ```sh
   USER_NAME = "#enter user name here"
